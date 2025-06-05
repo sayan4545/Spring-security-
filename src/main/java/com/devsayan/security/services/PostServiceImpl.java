@@ -1,5 +1,4 @@
 package com.devsayan.security.services;
-
 import com.devsayan.security.dtos.PostDto;
 import com.devsayan.security.entities.PostEntity;
 import com.devsayan.security.entities.User;
@@ -23,7 +22,6 @@ import java.util.List;
 public class PostServiceImpl implements PostService{
     private final ModelMapper modelMapper;
     private final PostRepository postRepository;
-
     @Override
     public List<PostDto> getAllPosts() {
         List<PostEntity> posts = postRepository.findAll();
